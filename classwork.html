@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classwork1</title>
+  </head>
+  <body>
+    
+<script>
+    const myName = 'Algani';
+    const aboutMe = 'JIHC student (colored photo)';
+
+
+    const body = document.querySelector('body');
+
+    body.style.height = '100vh';
+    body.style.display = 'flex';
+    body.style.alignItems = 'center';
+    body.style.justifyContent = 'center';
+    body.style.backgroundColor = 'red';
+    body.style.fontFamily = 'sans-serif';
+    body.style.color = 'white';
+    body.style.overflow = 'hidden';
+
+    const container = document.createElement('div');
+    container.style.maxWidth = '520px';
+    container.style.textAlign = 'center';
+    container.style.padding = '60px 40px';
+    container.style.background = 'blue';
+    container.style.borderRadius = '30px';
+    container.style.boxShadow = '0px 20px 40px black';
+    body.appendChild(container);
+
+    const nameElement = document.createElement('h1');
+    nameElement.textContent = myName;
+    nameElement.style.fontSize = '40px';
+    nameElement.style.fontWeight = 'bold';
+    nameElement.style.textShadow = '0px 10px 20px black';
+
+    container.appendChild(nameElement);
+
+
+    const img = document.createElement('img');
+    img.src = './assets/images/WIN_20250909_15_07_31_Pro.jpg';
+    img.style.width = '260px';
+    img.style.height = '260px';
+    img.style.boxShadow = '0px 10px 20px black';
+    img.style.borderRadius = '50%';
+    
+    container.appendChild(img);
+
+    const aboutMeElement = document.createElement('p');
+    aboutMeElement.textContent = aboutMe;
+    aboutMeElement.style.fontSize = '18px';
+    aboutMeElement.style.lineHeight = '1.5';
+    container.appendChild(aboutMeElement);
+</script>
+    </body>
+</html>
